@@ -94,7 +94,8 @@ namespace ProjectPP
                 pictureBox2.Image.Save(payment, pictureBox2.Image.RawFormat);
                 if (addp.savepayment(orderid,payment))
                 {
-                    MessageBox.Show("Uploaded. Please check the order status on order list.", "Payment ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Uploaded. Please check the order status on order list.", "Payment ", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
                     pictureBox2.Image = null;
                     this.Close();
                 }
